@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+<html>
+
+  <button onclick= "drawCircle()" > Click me to use a circle brush! </button>
+   <button onclick= "reset()" > Click me to reset the canvas! </button>
+  
+   
+</html>
+ 
+ <canvas id="myCanvas" height="500" width="500"> </canvas>
+    <script>
+
+    var canvas= document.getElementById("myCanvas"); 
+    var ctx = canvas.getContext("2d") ;
+    document.addEventListener("mousemove", drawRect);
+
+// When reset button is clicked
+  function reset(){
+      //removes circle brush
+      document.removeEventListener("mousemove", drawCircle); 
+      ctx.clearRect(0,0, 500, 500);
+      //go back to rect brush
+      document.addEventListener("mousemove", drawRect); 
+      }
+
+// Rectangle brush
+  function drawRect(event) {
+      xCoordinate = event.pageX;
+      yCoordinate = event.pageY - 20;
+      ctx.fillStyle="#ff46e9"  
+      ctx.fillRect(xCoordinate,yCoordinate,25,25);
+}
+
+// Circle brush
+    function drawCircle(){
+     // clears canvas
+     ctx.clearRect(0,0, 500, 500);
+      ctx.strokeStyle = "#ff8000";
+      // (x, y, radius, start angle, end angle)
+      ctx.arc(xCoordinate, yCoordinate, 20, 0, Math.PI * 2); 
+      ctx.stroke();
+      document.addEventListener("mousemove", drawCircle);
+    }
+
+  </script>
+
+
+

@@ -1,0 +1,109 @@
+body{
+  background-image:url("Pictures/travel2.jpg");
+}
+h1{
+  text-align:center;
+  font-family:Georgia;
+  font-size:50px;
+  background-color:white;
+  padding:20px 20px;
+}
+p{
+  font-family:Georgia;
+  font-size:15px;
+  text-align:center;
+}
+.bodybackground{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 10px;
+  width:60%;
+  border:solid 2px black;
+}
+.rectangle{
+  height:1000px;
+  width:100px;
+  background-color: #a2e6cd;
+}
+div>a{
+  border: dotted 5px #ff9dd9;
+  font-family:Georgia;
+  margin:50px;
+  padding:5px;
+  background-color:#ffd5dd;
+}
+.location1{
+  font-family:'Gill Sans';
+  color:#3f86cc;
+  font-size:20px;
+  font-style:bold;
+}
+.location2{
+  font-family:'Century Gothic';
+  color:#408cff;
+  font-size:30px;
+  font-style:italic;
+}
+.list{
+  border:solid 3px #8079d4;
+  background-color: #bebed9;
+  margin: auto;
+  list-style-position: inside;
+  text-align: center;
+  width:700px;
+}
+table, th, td{
+  text-align:center;
+  border: solid 3px #8079d4;
+  background-color:white;
+}
+#hover:hover{
+  background-color: #c4c1ec;
+}
+#airport{
+  width:250px;
+}
+#sanjuanpic1{
+  width:200px;
+  border: double 20px #e2deff;
+  padding: 20px;
+}
+#figcaption1:hover::after{
+  background-color:#e2deff;
+  content:"On a dock looking over San Juan's colored buildings!";
+}
+#sanjuanpic2{
+  width:200px;
+  border: double 20px #ffd5dd;
+  padding:20px;
+}
+#figcaption2:hover::after{
+  background-color:#ffd5dd;
+  content:"In Castillo San Felipe del Morro, a historical landmark build in the 16th century!";
+}
+
+#whitehouse{
+  width:400px;
+  border: dotted 10px #aedbff; 
+}
+#blue{
+  width:400px;
+  padding:10px;
+  border: groove 10px #e2deff;
+  margin:5px;
+}
+iframe{
+  width:500px;
+  height:500px;
+}
+p>b{
+  font-family:cursive;
+}
+.centeredimages{
+  display:flex;
+  justify-content:center;
+}
+embed{
+  width:525px;
+  height:550px;
+  border: solid 5px black;
+}
